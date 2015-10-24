@@ -1,0 +1,30 @@
+candidature:
+    path:     /
+    defaults: { _controller: "formationAnnonceBundle:Candidature:index" }
+
+candidature_show:
+    path:     /{id}/show
+    defaults: { _controller: "formationAnnonceBundle:Candidature:show" }
+
+candidature_new:
+    path:     /new
+    defaults: { _controller: "formationAnnonceBundle:Candidature:new" }
+
+candidature_create:
+    path:     /create
+    defaults: { _controller: "formationAnnonceBundle:Candidature:create" }
+    requirements: { _method: post }
+
+candidature_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "formationAnnonceBundle:Candidature:edit" }
+
+candidature_update:
+    path:     /{id}/update
+    defaults: { _controller: "formationAnnonceBundle:Candidature:update" }
+    requirements: { _method: post|put }
+
+candidature_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "formationAnnonceBundle:Candidature:delete" }
+    requirements: { _method: post|delete }

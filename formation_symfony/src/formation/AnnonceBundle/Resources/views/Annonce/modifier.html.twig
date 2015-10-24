@@ -1,0 +1,7 @@
+<h1>Modifier un annonce </h1>
+{%if message %}
+    <p> {{ message }}</p>
+{%endif%}
+
+<form action="" method="post" {{form_enctype(f)}}> {{form(f)}}</form>
+<p><a href ="{{path('formation_annonce_form')}}">Retour à la liste des annonces </a></p>

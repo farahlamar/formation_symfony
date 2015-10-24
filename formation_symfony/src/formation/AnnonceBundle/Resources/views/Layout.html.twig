@@ -1,0 +1,28 @@
+<html>
+  <html>
+  <head>
+        <title> {% block titre %} Annonces|{%endblock%}</title>
+        <!-- annonnce|, si on veut afficher ce msg on fait appel à parent()  -->
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <link rel ="stylesheet" href="{{ asset ('css/main.css')}}"/>
+    </head>
+    <body>
+       
+        <div id="page">
+            <div id="header">
+                <ul id="menu">
+                    <li> <a href="{{path('candidature')}}">Candidature</a></li>
+                    <li> <a href="{{path('formation_annonce_listeAnnonce')}}">Annoncess</a></li>
+                </ul>
+            </div>
+                <div id="content">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <div id="footer">
+                    <p>Tous droits réservés 2015 </p>
+                </div>
+            
+        </div>
+    </body>
+</html>

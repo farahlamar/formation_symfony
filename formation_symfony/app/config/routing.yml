@@ -1,0 +1,9 @@
+projet_gestion:
+    resource: "@ProjetGestionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+formation_annonce:
+    resource: "@formationAnnonceBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

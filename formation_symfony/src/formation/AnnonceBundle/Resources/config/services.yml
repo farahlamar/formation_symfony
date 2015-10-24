@@ -1,0 +1,3 @@
+services:
+   formation_annonce_verif:
+    class: formation\AnnonceBundle\verifier\Text

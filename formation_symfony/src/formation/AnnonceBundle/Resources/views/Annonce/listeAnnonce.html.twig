@@ -1,0 +1,24 @@
+<html>
+    <head><link rel ="stylesheet" href="{{ asset ('css/main.css')}}"/></head>
+    <body>
+        <h1>Liste des annonces</h1>
+        {%for annonces in annonce%}
+            <p>{{annonces.titre }}        
+           {{annonces.contenu }}
+           {{annonces.date|date('Y-m-d') }}
+           {{annonces.auteur }}
+            {{annonces.Categorie}}</p>
+           
+            <p>{% for condidature in annonces.condidatures %}
+                    <li>condidature</li>
+                    {% endfor%}
+            </p>
+           
+            <a href ="{{path('formation_annonce_editer',{'id':annonces.id})}}" >modifier </a> &nbsp;
+            <a href ="{{path('formation_annonce_supprimer',{'id':annonces.id})}}" >supprimer </a>
+        {%else%}
+                <p>Aucune annonce n'a été trouvée .</p>
+        {% endfor%}
+            
+    </body>
+</html>

@@ -1,0 +1,38 @@
+formation_annonce_candidature:
+    resource: "@formationAnnonceBundle/Resources/config/routing/candidature.yml"
+    prefix:   /candidature
+
+formation_annonce_homepage:
+    path:     /somme/{entier1}/{entier2}
+    defaults: { _controller: formationAnnonceBundle:Annonce:index }
+formation_annonce_ajout:
+    path:     /annonce/ajouter
+    defaults: { _controller: formationAnnonceBundle:Annonce:ajout }
+    
+formation_annonce_lister:
+    path:     /annonce/lister
+    defaults: { _controller: formationAnnonceBundle:Annonce:lister }
+formation_annonce_form:
+    path:     /annonce/form
+    defaults: { _controller: formationAnnonceBundle:Annonce:ajouter }
+formation_annonce_listeAnnonce:
+    path:     /annonce/listeAnnonce
+    defaults: { _controller: formationAnnonceBundle:Annonce:listeAnnonce }
+    
+formation_annonce_editer:
+    path:     /annonce/edit/{id}
+    defaults: { _controller: formationAnnonceBundle:Annonce:editer }
+    
+formation_annonce_supprimer:
+    path:     /annonce/supprimer/{id}
+    defaults: { _controller: formationAnnonceBundle:Annonce:supprimer }
+formation_annonce_AnnonceTri:
+    path:     /annonce/AnnonceTri
+    defaults: { _controller: formationAnnonceBundle:Annonce:Top }
+formation_annonce_text:
+    path:     /annonce/text
+    defaults: { _controller: formationAnnonceBundle:Annonce:Text }
+formation_annonce_verif:
+    path:     /annonce/texts
+    defaults: { _controller: formationAnnonceBundle:verifer:Text }
+ 
